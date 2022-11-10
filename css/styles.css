@@ -63,7 +63,8 @@ address {
   display: inline-block;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -71,8 +72,6 @@ address {
   background-color: var(--button-color);
   color: var(--accent-color);
 }
-
-
 
 /* HEADER */
 
@@ -185,10 +184,7 @@ address {
   height: 4px;
   background: var(--button-color);
   border-radius: 2px;
-
 }
-
-
 
 .header-link .contacts-icon {
   margin-right: 10px;
@@ -327,9 +323,8 @@ address {
 
 .wrapper-text {
   font-weight: 700;
- 
+
   line-height: calc(16 / 14);
-  
 
   text-transform: uppercase;
   color: var(--accent-color);
@@ -342,7 +337,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 /*  Our team  */
@@ -418,7 +412,8 @@ address {
 
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -544,7 +539,8 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover,
@@ -555,9 +551,7 @@ address {
 
 .socials-form {
   margin-left: 93px;
-
 }
-
 
 /* Modal window */
 
@@ -570,7 +564,8 @@ address {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrope.is-hidden {
@@ -589,6 +584,7 @@ address {
   height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close-btn {
@@ -607,6 +603,23 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+.modal-form {
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin-bottom: 10px;
+}
+/* label {
+  display: block;
+  margin-bottom: 15px;
+} */
+
 /* PORTFOLIO */
 
 .portfolio {
@@ -637,7 +650,8 @@ address {
   background: var(--icon-background-color);
   border: none;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .second-btn:hover,
@@ -646,7 +660,6 @@ address {
   color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
 .work {
