@@ -553,6 +553,12 @@ address {
   background-color: var(--button-color);
 }
 
+.socials-form {
+  margin-left: 93px;
+
+}
+
+
 /* Modal window */
 
 .backdrope {
