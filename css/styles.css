@@ -550,11 +550,11 @@ address {
 }
 
 .socials-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .follow-form {
-  margin-top: 20px;
+
   display: flex;
   gap: 12px;
 }
@@ -583,6 +583,7 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--accent-color);
+  padding-left: 16px;
 
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -607,13 +608,16 @@ address {
   left: 16px;
   bottom: 15px;
 
-  transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0) scale(1);
+  
+
+  transition: color cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus + .form-field-label,
 .form-input:not(:placeholder-shown) + .form-field-label {
-  color: var(--accent-color);
-  transform: translateY(-35px) scale(0.8);
+  
+  transform: translateX(-75px) scale(1);
 }
 
 .form-btn {
@@ -694,6 +698,19 @@ address {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+
+.close-btn:hover,
+.close-btn:focus {
+color: var(--button-color)
+
+}
+
+.close-btn-icon {
+  fill:currentColor;
 }
 
 .modal-title {
@@ -706,20 +723,22 @@ address {
   color: var(--primary-text-color);
 }
 
-.modal-form {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 448px;
-  margin-bottom: 10px;
+
+  margin-bottom: 20px;
 }
 
 .modal-form-field {
   display: block;
   position: relative;
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-bottom: 0;
 }
 
 .form-label-text {
@@ -729,6 +748,7 @@ address {
   letter-spacing: 0.01em;
   color: var(--title-text-color);
   margin-bottom: 4px;
+  display: block;
 }
 
 .modal-form-input {
@@ -739,22 +759,23 @@ address {
   border-radius: 4px;
   outline: transparent;
 
-  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 42px;
 }
 
 .modal-form-input:focus {
   border-color: var(--button-color);
+  color: var(--button-color)
 }
+
 .form-icon {
   position: absolute;
-
   left: 12px;
-  bottom: 11px;
+  top: 50%;
 }
 
 .form-icon:focus {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .modal-form-input:focus + .form-icon {
@@ -843,7 +864,7 @@ address {
   border-radius: 4px;
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-btn:hover,
