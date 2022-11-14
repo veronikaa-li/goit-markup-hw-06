@@ -585,7 +585,7 @@ address {
   color: var(--accent-color);
   padding-left: 16px;
 
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input::placeholder {
@@ -772,6 +772,8 @@ color: var(--button-color)
   position: absolute;
   left: 12px;
   top: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon:focus {
@@ -796,7 +798,7 @@ color: var(--button-color)
   border-radius: 4px;
   outline: transparent;
 
-  transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px 16px;
 }
 
